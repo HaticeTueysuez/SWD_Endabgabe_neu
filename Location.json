@@ -1,44 +1,38 @@
 [
     {
-        "name": "entrance",
         "roomNumber": 0,
         "title": "Eingang",
         "description": "Du befindest dich im Eingang des Krankenhauses. Du siehst:",
         "open": true,
-        "gameFinished": true,
-        "items": ["Pflanze", "Getränke Automat"]
+        "gameFinished": true
     },
     {
         "roomNumber": 1,
         "title": "Flur",
         "description": "Du Befindest dich im Flur. Hier siehst du:",
         "open": true,
-        "gameFinished": true,
-        "items":""
+        "gameFinished": true
     },
     {
         "roomNumber": 2,
         "title": "Cafeteria",
         "description": "Du befindest dich in der Cafeteria des Krankenhauses. Du siehst:",
         "open": true,
-        "gameFinished": true,
-        "items":["Kuchen","Kaffee","Löffel"]
+        "gameFinished": true
     },
     {
         "roomNumber": 3,
         "title": "Patientenzimmer",
         "description": "Du bist im Patientenzimmer. Hier siehst du: ",
         "open": true,
-        "gameFinished": true,
-        "items":["Bett","Fernseher","Schlüssel"]
+        "gameFinished": true
     },
     {
         "roomNumber": 4,
         "title": "Operationssaal",
         "description": "Du bist endlich im Operationssaal. Schau dich um und hole das Medikament, um deine Freundin zu retten!",
         "open": false,
-        "gameFinished": false,
-        "items":["Skalpell", "Medikament"]
+        "gameFinished": false
     }
 
 ]

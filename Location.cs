@@ -24,59 +24,21 @@ namespace swd_endaufgabe
         public List<Items> Items = new List<Items>();
         public static Dictionary<string, Location> rooms;
 
-        public Location(int roomNumber, string title, string description, bool open, bool gameFinished, List<Items> items)
+        public Location(int roomNumber, string title, string description, bool open, bool gameFinished)
         {
             RoomNumber = roomNumber;
             Title = title;
             Description = description;
             Open = open;
             GameFinished = gameFinished;
-            Items = items;
-
         }
-        public static Location MapSetUp()
+        public static Location MapSetUp(List<Location> locations)
         {
-            
-            /*#region Object Rooms
-            Location entrance = new Location
-            (
-                0,
-                "Eingang",
-                "Du befindest dich im Eingang des Krankenhauses. Du siehst:",
-                true, true
-            );
-
-            Location hall = new Location
-            (
-                1,
-                "Flur",
-                "Du Befindest dich im Flur. Hier siehst du:", 
-                true ,true
-            );
-
-            Location cafeteria = new Location
-            (
-                2,
-                "Cafeteria", 
-                "Du befindest dich in der Cafeteria des Krankenhauses. Du siehst:", 
-                true, true
-            );
-            
-            Location patientroom = new Location
-            (
-                3,
-                "Patientenzimmer", 
-                "Du bist im Patientenzimmer. Hier siehst du: ", 
-                true, true
-            );
-            Location operationroom = new Location
-            (
-                4,
-                "Operationssaal", 
-                "Du bist endlich im Operationssaal. Schau dich um und hole das Medikament, um deine Freundin zu retten!", 
-                false, false
-            );
-            #endregion*/
+            Location entrance = new Location(locations[0].RoomNumber, locations[0].Title, locations[0].Description, locations[0].Open, locations[0].GameFinished);
+            Location hall = new Location(locations[1].RoomNumber, locations[1].Title, locations[1].Description, locations[1].Open, locations[1].GameFinished);
+            Location cafeteria = new Location(locations[2].RoomNumber, locations[2].Title, locations[2].Description, locations[2].Open, locations[2].GameFinished);
+            Location patientroom = new Location(locations[3].RoomNumber, locations[3].Title, locations[3].Description, locations[3].Open, locations[3].GameFinished);
+            Location operationroom = new Location(locations[4].RoomNumber, locations[4].Title, locations[4].Description, locations[4].Open, locations[4].GameFinished);
 
             #region Object Items
             Items spoon = new Items
