@@ -29,20 +29,19 @@ namespace swd_endaufgabe
             Characters[name] = player;
             return player;
         }
-        public static int AvatarMove(string name, Location location, Avatar avatar, Enemy enemy)
+        public static int AvatarMove(string name, Location location, Avatar avatar, Enemy enemy, int number_cha, List<Avatar> characters)
         {
-            /*int count = 1;
-            for(int i=0; i<count; i++)
-            {
-                if (avatar.CurrentRoom == otherCharacters[i].CurrentRoom)
-                {
-                    Console.WriteLine(otherCharacters[i].Name + "befindet sich in dem Raum");
-                }
-            }*/
-
 
             Avatar.Characters[name].CurrentRoom = location.RoomNumber;
+            
             ConsoleOutput.DescribeLocation(location);
+            for(int i=0; i<number_cha; i++)
+            {
+                if (location.RoomNumber == characters[i].CurrentRoom)
+                {
+                    Console.WriteLine(characters[i].Name + " befindet sich in dem Raum");
+                }
+            }
             Enemy.EnemySameRoom(location, avatar, enemy);
             
             return Avatar.Characters[name].CurrentRoom;
@@ -60,8 +59,6 @@ namespace swd_endaufgabe
             Health = health;
             Inventory = inventory;
             CurrentRoom = currentRoom;
-            
-            
         }
 
         public static Enemy SetupEnemy(string name, int health, List<Items> inventory, int currentRoom)

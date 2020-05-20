@@ -9,16 +9,17 @@ namespace swd_endaufgabe
     class Controls
     {
         public static string[] words;
+        public static int number_cha;
         public static List<Avatar> mainCharacter = new List<Avatar>();
         public static List<Enemy> allEnemies = new List<Enemy>();
-        //public static List<Avatar> otherCharacters = new List<Avatar>();
+        public static List<Avatar> characters = new List<Avatar>();
         public static List<Location> locations = new List<Location>();
         
         public static void GameControls()
         {
             ConsoleOutput.GameDescription();
             fillListsWithJsonData();
-            Location currentLocation = Location.MapSetUp();
+            Location currentLocation = Location.MapSetUp(locations);
             
             Avatar avatar = Avatar.setupAvatar(mainCharacter[0].Name, mainCharacter[0].Health, mainCharacter[0].CurrentRoom);
             Enemy enemy = Enemy.SetupEnemy(allEnemies[0].Name, allEnemies[0].Health, allEnemies[0].Inventory, allEnemies[0].CurrentRoom);
@@ -40,7 +41,7 @@ namespace swd_endaufgabe
                             else
                             {
                             currentLocation = currentLocation.North;
-                            Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy);
+                            Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy, number_cha, characters);
                             }
                         }
                         else
@@ -59,7 +60,7 @@ namespace swd_endaufgabe
                             else
                             {
                                 currentLocation = currentLocation.East;
-                                Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy);
+                                Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy, number_cha, characters);
                             }
                         }
                         else
@@ -78,7 +79,7 @@ namespace swd_endaufgabe
                             else
                             {
                             currentLocation = currentLocation.South;
-                            Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy);
+                            Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy, number_cha, characters);
                             }
                         }
                         else
@@ -97,7 +98,7 @@ namespace swd_endaufgabe
                             else
                             {
                             currentLocation = currentLocation.West;
-                            Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy);
+                            Avatar.AvatarMove(mainCharacter[0].Name, currentLocation, avatar, enemy, number_cha, characters);
                             }
                         }
                         else
@@ -235,15 +236,16 @@ namespace swd_endaufgabe
                 }
             }
 
-            /*StreamReader readerCharacters = new StreamReader("Characters.json");
+            StreamReader readerCharacters = new StreamReader("Characters.json");
             {
                 string json = readerCharacters.ReadToEnd();
-                List<Avatar> deserializedotherCharacters = JsonConvert.DeserializeObject<List<Avatar>>(json);
-                for (int i = 0; i < deserializedotherCharacters.Count; i++)
+                List<Avatar> deserializedCharacters = JsonConvert.DeserializeObject<List<Avatar>>(json);
+                number_cha = deserializedCharacters.Count;
+                for (int i = 0; i < deserializedCharacters.Count; i++)
                 {
-                    otherCharacters.Add(deserializedotherCharacters[i]);
+                    characters.Add(deserializedCharacters[i]);
                 }
-            }*/
+            }
 
             StreamReader readerLocations = new StreamReader("Location.json");
             {

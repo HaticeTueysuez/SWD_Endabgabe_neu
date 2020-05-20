@@ -1,6 +1,15 @@
-{
-    "name": "Krankenschwester",
-    "health": 0,
-    "inventory": [],
-    "currentRoom": 1
-}
+[
+    {
+        "name": "Hausmeister",
+        "health": 0,
+        "inventory": [],
+        "currentRoom": 1
+    },
+    {
+        "name": "Krankenschwester",
+        "health": 0,
+        "inventory": [],
+        "currentRoom": 2
+    }
+    
+]

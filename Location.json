@@ -15,15 +15,15 @@
     },
     {
         "roomNumber": 2,
-        "title": "Cafeteria",
-        "description": "Du befindest dich in der Cafeteria des Krankenhauses. Du siehst:",
+        "title": "Patientenzimmer",
+        "description": "Du befindest dich im Patientenzimmer des Krankenhauses. Du siehst:",
         "open": true,
         "gameFinished": true
     },
     {
         "roomNumber": 3,
-        "title": "Patientenzimmer",
-        "description": "Du bist im Patientenzimmer. Hier siehst du: ",
+        "title": "Cafeteria",
+        "description": "Du bist in der Cafeteria. Hier siehst du: ",
         "open": true,
         "gameFinished": true
     },

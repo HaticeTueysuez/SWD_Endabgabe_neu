@@ -33,8 +33,8 @@ namespace swd_endaufgabe
         {
             Location entrance = new Location(locations[0].RoomNumber, locations[0].Title, locations[0].Description, locations[0].Open, locations[0].GameFinished);
             Location hall = new Location(locations[1].RoomNumber, locations[1].Title, locations[1].Description, locations[1].Open, locations[1].GameFinished);
-            Location cafeteria = new Location(locations[2].RoomNumber, locations[2].Title, locations[2].Description, locations[2].Open, locations[2].GameFinished);
-            Location patientroom = new Location(locations[3].RoomNumber, locations[3].Title, locations[3].Description, locations[3].Open, locations[3].GameFinished);
+            Location patientroom = new Location(locations[2].RoomNumber, locations[2].Title, locations[2].Description, locations[2].Open, locations[2].GameFinished);
+            Location cafeteria = new Location(locations[3].RoomNumber, locations[3].Title, locations[3].Description, locations[3].Open, locations[3].GameFinished);
             Location operationroom = new Location(locations[4].RoomNumber, locations[4].Title, locations[4].Description, locations[4].Open, locations[4].GameFinished);
 
             #region Object Items
