@@ -1,0 +1,10 @@
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\bin\Debug\netcoreapp2.0\swd_endaufgabe.deps.json
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\bin\Debug\netcoreapp2.0\swd_endaufgabe.runtimeconfig.json
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\bin\Debug\netcoreapp2.0\swd_endaufgabe.runtimeconfig.dev.json
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\bin\Debug\netcoreapp2.0\swd_endaufgabe.dll
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\bin\Debug\netcoreapp2.0\swd_endaufgabe.pdb
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\obj\Debug\netcoreapp2.0\swd_endaufgabe.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\obj\Debug\netcoreapp2.0\swd_endaufgabe.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\obj\Debug\netcoreapp2.0\swd_endaufgabe.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\obj\Debug\netcoreapp2.0\swd_endaufgabe.dll
+C:\Users\User\Documents\GitHub\Softwaredesign\swd_endaufgabe\obj\Debug\netcoreapp2.0\swd_endaufgabe.pdb
