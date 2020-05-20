@@ -66,14 +66,6 @@ namespace swd_endaufgabe
             Enemy myenemy = new Enemy(
                 name, health, inventory, currentRoom
             );
-            /*Items secretKey = new Items
-            (
-                "geheimschlüssel", "Geheimschlüssel", "Zentralschlüssel der Zugang zu allen Räumen bietet.", true
-            );
-            myenemy.Inventory.AddRange(new List<Items>
-            {
-                secretKey
-            });*/
 
             Characters = new Dictionary<string, GameCharacter>();
             Characters[name] = myenemy;
