@@ -7,11 +7,8 @@ namespace swd_endaufgabe
     {
         public string Title;
         public string Description;
-
         public int RoomNumber;
-
         public bool Open;
-
         public bool GameFinished;
 
         public static bool final_key = false;
