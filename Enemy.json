@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Dr.Scalp",
+        "health": 3,
+        "inventory": [{
+            "InteractionName" : "Schlüssel",
+            "Description" : "Zentralschlüssel der Zugang zu allen Räumen bietet.",
+            "Title" : "Geheimschlüssel",
+            "Usable" : true
+        }],
+        "currentRoom": 3
+    }
+
+]

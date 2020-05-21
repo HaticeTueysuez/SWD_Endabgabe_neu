@@ -57,7 +57,6 @@ namespace swd_endaufgabe
                     
                     if (enemy.Health == 0)
                     {
-                        //enemy.Life = false;
                         ConsoleOutput.AvatarWin();
                         Items.DropLoot(_words, location, enemy);
                         break;

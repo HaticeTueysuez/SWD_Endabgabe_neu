@@ -10,7 +10,6 @@ namespace swd_endaufgabe
         public string Title;
         public bool Usable;
 
-
         public Items(string interactionName, string title, string description, bool usable)
         {
             InteractionName = interactionName;

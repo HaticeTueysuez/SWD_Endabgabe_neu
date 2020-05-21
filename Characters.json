@@ -1,12 +1,12 @@
 [
     {
-        "name": "Hausmeister",
+        "name": "Hausmeister Tom",
         "health": 0,
         "inventory": [],
         "currentRoom": 1
     },
     {
-        "name": "Krankenschwester",
+        "name": "Krankenschwester Lilly",
         "health": 0,
         "inventory": [],
         "currentRoom": 2

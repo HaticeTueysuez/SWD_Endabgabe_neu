@@ -11,7 +11,7 @@ namespace swd_endaufgabe
         public static string[] words;
         public static int number_cha;
         public static List<Avatar> mainCharacter = new List<Avatar>();
-        public static List<Enemy> allEnemies = new List<Enemy>();
+        public static List<Enemy> myEnemy = new List<Enemy>();
         public static List<Avatar> characters = new List<Avatar>();
         public static List<Location> locations = new List<Location>();
         
@@ -22,7 +22,7 @@ namespace swd_endaufgabe
             Location currentLocation = Location.MapSetUp(locations);
             
             Avatar avatar = Avatar.setupAvatar(mainCharacter[0].Name, mainCharacter[0].Health, mainCharacter[0].CurrentRoom);
-            Enemy enemy = Enemy.SetupEnemy(allEnemies[0].Name, allEnemies[0].Health, allEnemies[0].Inventory, allEnemies[0].CurrentRoom);
+            Enemy enemy = Enemy.SetupEnemy(myEnemy[0].Name, myEnemy[0].Health, myEnemy[0].Inventory, myEnemy[0].CurrentRoom);
             ConsoleOutput.DescribeLocation(currentLocation);
             for(;;)
             {
@@ -226,13 +226,13 @@ namespace swd_endaufgabe
                 }
             }
 
-            StreamReader readerEnemies = new StreamReader("Enemies.json");
+            StreamReader readerEnemies = new StreamReader("Enemy.json");
             {
                 string json = readerEnemies.ReadToEnd();
                 List<Enemy> deserializedAnamies = JsonConvert.DeserializeObject<List<Enemy>>(json);
                 for (int i = 0; i < deserializedAnamies.Count; i++)
                 {
-                    allEnemies.Add(deserializedAnamies[i]);
+                    myEnemy.Add(deserializedAnamies[i]);
                 }
             }
 
