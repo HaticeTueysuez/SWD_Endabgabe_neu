@@ -14,12 +14,14 @@ namespace swd_endaufgabe
     class Avatar : GameCharacter
     {
         public static Dictionary<string, GameCharacter> Characters;
+        
         public Avatar(string name, int health, int currentRoom)
         {
             Name = name;
             Health = health;
             CurrentRoom = currentRoom;
         }
+
         public static Avatar setupAvatar(string name, int health, int currentRoom)
         {
             Avatar player = new Avatar(
@@ -29,6 +31,7 @@ namespace swd_endaufgabe
             Characters[name] = player;
             return player;
         }
+
         public static int AvatarMove(string name, Location location, Avatar avatar, Enemy enemy, int number_cha, List<Avatar> characters)
         {
 
@@ -71,6 +74,7 @@ namespace swd_endaufgabe
             Characters[name] = myenemy;
             return myenemy;
         }
+
         public static void EnemySameRoom(Location location, Avatar avatar, Enemy enemy)
         {
             if(enemy.Health != 0)
@@ -81,5 +85,6 @@ namespace swd_endaufgabe
                     }
             }
         }
+
     }
 }
